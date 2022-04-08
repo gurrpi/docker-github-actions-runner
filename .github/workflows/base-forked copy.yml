@@ -1,0 +1,13 @@
+name: Run self-hosted
+on:
+  push:
+
+
+
+jobs:
+  ubuntu_base_bionic_deploy:
+    runs-on: [self-hosted]
+    steps:
+    - name: Copy Repo Files
+      uses: actions/checkout@v3
+ 
