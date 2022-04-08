@@ -39,4 +39,4 @@ jobs:
         max_attempts: 3
         retry_on: error
         timeout_minutes: 120
-        command: docker buildx build -f Dockerfile.ubuntu-hirsute -t ${{ github.repository }:ubuntu-hirsute --output "type=image,push=true" --platform linux/amd64,linux/arm/v7,linux/arm64 .
+        command: docker buildx build -f Dockerfile.ubuntu-hirsute -t ${{ github.repository }}:ubuntu-hirsute --output "type=image,push=true" --platform linux/amd64,linux/arm/v7,linux/arm64 .
